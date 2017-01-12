@@ -1,6 +1,6 @@
-var w = 500;
-var h = 500;
-
+var w = window.innerWidth;
+var h = window.innerHeight;
+var bubbleArray = [];
 
 function Bubble(xloc, yloc, zloc, rise, rad) {
   this.xloc = xloc;
@@ -9,8 +9,6 @@ function Bubble(xloc, yloc, zloc, rise, rad) {
   this.rad = rad;
   this.rise = rise;
 }
-
-var bubbleArray = [];
 
 function CreateBubbles(howManyBubbles) {
   var count = howManyBubbles;
@@ -31,7 +29,6 @@ function Show() {
     var y = bubbleArray[i].yloc;
     var z = bubbleArray[i].zloc;
     var r = bubbleArray[i].rad;
-
     fill(255, 255, 255, z);
     ellipse(x, y, r, r);
   }
@@ -41,13 +38,9 @@ function Rise() {
   for (i = 0; i < bubbleArray.length; i++) {
     var x = bubbleArray[i].rise;
     bubbleArray[i].yloc -= x;
-   
-    
     var zmin = bubbleArray[i].zloc * -5;
     var zmax = bubbleArray[i].zloc * 5;
-    
     var slowy = bubbleArray[i].yloc * .08;
-    
     bubbleArray[i].xloc += map(cos(slowy), -1,1,zmin,zmax)
   }
 }
@@ -64,7 +57,6 @@ function setup() {
   createCanvas(w, h);
   noStroke();
   CreateBubbles(200);
-
 }
 
 function draw() {
