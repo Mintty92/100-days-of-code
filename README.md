@@ -14,7 +14,6 @@ I changed the size and alpha of the bubbles mapped to a Z variable. I fixed the 
 
 ## Contents
 * [Rules](rules.md)
-* [Log - click here to see my progress](log.md)
 * [FAQ](FAQ.md)
 * [Resources](resources.md)
 
