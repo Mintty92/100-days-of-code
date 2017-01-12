@@ -6,7 +6,7 @@ Today I started by creating a canvas that manipulates bubbles on the screen, It 
 
 ### Day Two
 ## 01/12/2017
-I changed the size and alpha of the bubbles mapped to a Z variable. I fixed the direction of the flow, and added a different background color. I also added an oscillation to the bubbles as they go up that maps to the z variable. This makes them look more like bubbles. 
+I changed the size and alpha of the bubbles mapped to a Z variable. I fixed the direction of the flow, and added a different background color. I also added an oscillation to the bubbles as they go up that maps to the z variable. This makes them look more like bubbles. Made the canvas full-screen.
 
 
 

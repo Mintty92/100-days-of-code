@@ -1,7 +1,8 @@
 var w = window.innerWidth;
 var h = window.innerHeight;
 var bubbleArray = [];
-
+ 
+ 
 function Bubble(xloc, yloc, zloc, rise, rad) {
   this.xloc = xloc;
   this.yloc = yloc;
