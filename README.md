@@ -19,7 +19,7 @@ I changed the size and alpha of the bubbles mapped to a Z variable. I fixed the 
 
 ## If you've decided to join:
 1. Read [Join the #100DaysOfCode](https://medium.freecodecamp.com/join-the-100daysofcode-556ddb4579e4)
-2. Fork this repo and commit to the [Log](log.md) daily. [Example](https://github.com/Kallaway/100-days-kallaway-log).
+2. Fork this repo and commit to the Log daily. [Example](https://github.com/Kallaway/100-days-kallaway-log).
 3. **Code minimum an hour every day for the next 100 days.**
 4. Change the date in [Rules](rules.md) to the day you've started the challenge.
 5. Delete the examples in the log, or comment them out, and start filling it with your own content.
