@@ -1,6 +1,6 @@
-var w = 800;
-var h = 375;
-var angle = 90;
+var w = 500;
+var h = 500;
+
 
 function Bubble(xloc, yloc, zloc, rise, rad) {
   this.xloc = xloc;
@@ -39,7 +39,16 @@ function Show() {
 
 function Rise() {
   for (i = 0; i < bubbleArray.length; i++) {
-    bubbleArray[i].yloc -= bubbleArray[i].rise;
+    var x = bubbleArray[i].rise;
+    bubbleArray[i].yloc -= x;
+   
+    
+    var zmin = bubbleArray[i].zloc * -5;
+    var zmax = bubbleArray[i].zloc * 5;
+    
+    var slowy = bubbleArray[i].yloc * .08;
+    
+    bubbleArray[i].xloc += map(cos(slowy), -1,1,zmin,zmax)
   }
 }
 
@@ -49,15 +58,6 @@ function Edges() {
       bubbleArray[i].yloc = h + 20;
     }
   }
-}
-
-function Flap() {
-  var x = cos(angle);
-  for (i = 0; i < bubbleArray.length; i++) {
-    bubbleArray[i].xloc += x;
-  }
-
-
 }
 
 function setup() {
@@ -72,6 +72,5 @@ function draw() {
   background(60, 195, 120, 1);
   Show();
   Rise();
-  //Flap();
   Edges();
 }
