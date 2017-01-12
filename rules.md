@@ -1,12 +1,3 @@
-
-### Day One
-## 01/11/2017
-Today I started by creating a canvas that manipulates bubbles on the screen, It currently only looks like snow because the bubbles fall down from the top rather than flow up from the bottom. 
-
-
-
-
-
 #### -------------------------------------
 
 # Rules of the 100 Days Of Code Challenge
